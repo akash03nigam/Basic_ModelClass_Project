@@ -4,10 +4,10 @@ from my_app.models import Employee
 
 # Register your models here.
 class EmployeeAdmin(admin.ModelAdmin):
-    list_display=['Eno','Ename','Escore','Eaddr']
+    list_display=['Eno','Ename','Eaddr']
 
 class StudentAdmin(admin.ModelAdmin):
-    list_display=['Sno','Sname','Sscore','Saddr']
+    list_display=['Sno','Sname','Saddr']
 
 admin.site.register(Student,StudentAdmin)
 admin.site.register(Employee,EmployeeAdmin)
