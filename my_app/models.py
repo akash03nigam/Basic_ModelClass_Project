@@ -16,6 +16,6 @@ class Employee(models.Model):
     Escore=models.FloatField()
     
 
-    def __str__(self):
-        return self.Ename
+    #def __str__(self):
+        #return self.Ename
     
