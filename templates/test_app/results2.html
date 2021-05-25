@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>STUDENT INFORMATION</h1><hr>
+    {% if s %}
+        <table border=2>
+            <thead>
+                <th>Student Number</th>
+                <th>Student Name</th>
+                <th>Student Score</th>
+            </thead>
+            {%for em in s%}
+            <tr>
+                <td>{{em.Sno}}</td>
+                <td>{{em.Sname}}</td>
+                <td>{{em.Sscore}}</td>
+            </tr>
+            {%endfor%}
+        </table>
+        {%else%}
+        <p>No! Students Records Found!!</p>
+    {%endif%}    
+</body>
+</html>

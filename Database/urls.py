@@ -19,4 +19,6 @@ from my_app import views
 
 urlpatterns = [
     path('xyz/', admin.site.urls),
+    path('', views.employee_info),
+    path('a',views.student_info),
 ]  

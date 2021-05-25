@@ -7,8 +7,8 @@ class Student(models.Model):
     Sscore=models.FloatField()
     
  
-    def __str__(self):
-        return self.Sname
+    #def __str__(self):
+        #return self.Sname
     
 class Employee(models.Model):
     Eno= models.IntegerField()
