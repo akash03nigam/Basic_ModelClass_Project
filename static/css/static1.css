@@ -1,0 +1,10 @@
+body{
+    background:blue;
+    color: white;
+    text-align: center;
+}
+img{
+    border: 10px groove green;
+    width: 45%;
+    height: 800px;
+}
