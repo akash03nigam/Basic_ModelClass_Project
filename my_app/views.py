@@ -7,5 +7,6 @@ def employee_info(request):
     return render(request, 'test_app/results.html', {'e': employ})
 
 def student_info(request):
-    stu= Student.objects.order_by('Sscore')
+    stu= Student.objects.all()
     return render(request, 'test_app/results2.html',{'s':stu})
+    #stu= Student.objects.filter(marks_lt=35)
