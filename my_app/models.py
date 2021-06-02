@@ -7,7 +7,7 @@ class Student(models.Model):
     Sscore=models.FloatField()
     
  
-    #def __str__(self):
+    #def __str__(self):       #To show only Name parameter in the table.
         #return self.Sname
     
 class Employee(models.Model):
